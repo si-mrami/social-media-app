@@ -148,13 +148,13 @@ export const Posts = [
   // },
 ];
 
-export const Videos = [
+export const Video = [
   {
     id: 1,
-    video: "assets/post/10.jpeg",
+    video: "assets/post/vid.mp4",
     date: "1 week ago",
     userId: 1,
-    like: 2104,
-    comment: 1112,
+    liked: 2104,
+    comment: 112,
   },
 ];

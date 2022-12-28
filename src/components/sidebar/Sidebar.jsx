@@ -18,16 +18,6 @@ export default function Sidebar() {
     <div className="sidebar">
      <div className="sidebarWrapper">
       <ul className="sidebarList">
-        {/* <li className="sidebarListItem">
-          <RssFeed className="sidebarIcon"/>
-          <span className="sidebarListItemText">Feed</span>
-        </li> */}
-        {/* <Link to="/chats" style={{ textDecoration: 'none' }}>
-        <li className="sidebarListItem">
-          <Chat className="sidebarIcon"/>
-          <span className="sidebarListItemText">Chats</span>
-        </li>
-        </Link> */}
         <Link to="/videos" style={{ textDecoration: 'none' }}>
         <li className="sidebarListItem">
           <PlayCircleFilledOutlined className="sidebarIcon"/>

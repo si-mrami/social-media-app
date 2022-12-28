@@ -6,8 +6,19 @@ import image from "../../images/deyane.jpg";
 import { MoreVert } from "@material-ui/icons";
 import like from "../../images/like.png";
 import love from "../../images/heart.png";
+import vid from "../../images/vid.mp4";
+import { useState } from "react";
 
-export default function Videos() {
+export default function Videos({vide}) {
+
+  const [liked, setLiked] = useState("");
+  const [isLiked, setisLiked] = useState(false);
+
+  const hendellikeClick = () =>{
+        setLiked(isLiked ? liked-1 : liked+1);
+        setisLiked(!isLiked);
+  }
+
   return (
     <>
       <Topbar />
@@ -19,7 +30,7 @@ export default function Videos() {
             <div className="videoTop">
               <div className="videoTopleft">
                 <img src={image} alt="" className="profile-img" />
-                <span className="videoUsername">Mohamed Diyane</span>
+                <span className="videoUsername">Mohammed Diyane</span>
                 <span className="videoDate">5 min ago</span>
               </div>
               <div className="videoTopRight">
@@ -29,14 +40,14 @@ export default function Videos() {
             <div className="videoCenter">
               <span className="videodesc">New Video.</span>
               <video controls className="video">
-                <source src="mov_bbb.mp4" type="video/mp4" />
+                <source src={vid} type="video/mp4" />
               </video>
             </div>
             <div className="videobottom">
               <div className="videobottomleft">
-                <img src={like} alt="" className="imgicon" />
-                <img src={love} alt="" className="imgicon" />
-                <span className="videoCounter">123 Peaple Like it</span>
+                <img src={like} alt="" className="imgicon" onClick={hendellikeClick}/>
+                <img src={love} alt="" className="imgicon" onClick={hendellikeClick}/>
+                <span className="videoCounter">{liked} Peaple Like it</span>
               </div>
               <div className="videobottomrigh">
                 <span className="CommentText">12 Comments</span>

@@ -14,6 +14,7 @@ const Post = ({ post }) => {
     }
 
   return (
+    <div>
     <div className="post">
       <div className="postWrapper">
         <div className="postTop">
@@ -47,7 +48,8 @@ const Post = ({ post }) => {
           </div>
         </div>
       </div>
-    </div>
+     </div>
+     </div>
   );
 };
 
