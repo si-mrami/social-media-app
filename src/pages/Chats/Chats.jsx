@@ -47,6 +47,12 @@ export default function Chats() {
                 <span className="messegetime"></span>
                 <span className="messege">Ohhh My Good</span>
               </div>
+              <div className="friendlist">
+                <img src={person} alt="" className="profileimg" />
+                <span className="friendName">Hammza Farhan</span>
+                <span className="messegetime"></span>
+                <span className="messege">Ohhh My Good</span>
+              </div>
             </div>
           </div>
         </div>

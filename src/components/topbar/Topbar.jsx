@@ -33,7 +33,7 @@ export default function Topbar() {
           <div className="topbarIconItem">
             <Link to="/friend-request" style={{ textDecoration: "none" }}>
               <Person className="iconbar" />
-              <span className="topbarIconBadge">1</span>
+              <span className="topbarIconBadge">2</span>
             </Link>
           </div>
 
