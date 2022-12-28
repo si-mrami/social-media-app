@@ -8,7 +8,7 @@ import './Home.css';
 const Home = () => {
     return (
         <>
-        <Topbar />
+        <Topbar/>
         <div className="homeContianer">
            <Sidebar /> 
            <Feed />

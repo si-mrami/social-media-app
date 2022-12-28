@@ -1,5 +1,6 @@
 import React from 'react';
 import './Register.css';
+import registerimg from "../../images/reges.jpeg";
 
 const Register = () => {
     return (
@@ -8,6 +9,7 @@ const Register = () => {
                <div className="loginLeft">
                 <h3 className="loginLogo">Mrami</h3>
                 <span className="loginDesc">Connect whit friends and the World With Mrami.{" "}</span>
+                <img src={registerimg} alt="" className="regImg" />
                 </div> 
                <div className="loginRight">
                 <div className="loginBox">

@@ -57,7 +57,10 @@
   align-items: center;
 }
 
-
+.friends {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
 .rightbarProfileImg{
   width: 40px;
@@ -91,6 +94,7 @@
 
 .rightbarInfo{
   margin-bottom: 30px;
+  padding: 5px;
 }
 
 .rightbarInfoItem{
@@ -125,4 +129,15 @@
   height: 100px;
   object-fit: cover;
   border-radius: 5px;
+}
+.rightbarButton {
+  width: 140px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 22rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }

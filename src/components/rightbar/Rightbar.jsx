@@ -39,7 +39,7 @@ export default function Rightbar({profile}) {
           <span className="rightbarInfoValue">Single</span>
         </div>
       </div>
-      <h4>User Friends</h4>
+      <h4 className="friends">User Friends</h4>
       <div className="rightbarFollowings">
         <div className="rightbarFollowing">
           <img src="assets/person/deyane.jpg" alt="" className="rightbarFollowingImg" />

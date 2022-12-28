@@ -1,5 +1,6 @@
-import { RssFeed, 
-  Chat,
+import {
+  //  RssFeed, 
+  // Chat,
   PlayCircleFilledOutlined,
   Group,
   Bookmark,
@@ -10,24 +11,29 @@ import { RssFeed,
 import CloseFriends from "../CloseFriends/CloseFriends";
 import { Users } from '../../dummyData'
 import "./sidebar.css";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
     <div className="sidebar">
      <div className="sidebarWrapper">
       <ul className="sidebarList">
-        <li className="sidebarListItem">
+        {/* <li className="sidebarListItem">
           <RssFeed className="sidebarIcon"/>
           <span className="sidebarListItemText">Feed</span>
-        </li>
+        </li> */}
+        {/* <Link to="/chats" style={{ textDecoration: 'none' }}>
         <li className="sidebarListItem">
           <Chat className="sidebarIcon"/>
           <span className="sidebarListItemText">Chats</span>
         </li>
+        </Link> */}
+        <Link to="/videos" style={{ textDecoration: 'none' }}>
         <li className="sidebarListItem">
           <PlayCircleFilledOutlined className="sidebarIcon"/>
           <span className="sidebarListItemText">Videos</span>
         </li>
+        </Link>
         <li className="sidebarListItem">
           <Group className="sidebarIcon"/>
           <span className="sidebarListItemText">Groups</span>

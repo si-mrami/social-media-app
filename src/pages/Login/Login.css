@@ -10,10 +10,9 @@
     width: 70%;
     height: 70%;
     display: flex;
-    /* background-color: aquamarine; */
 }
 .loginleft,.loginRight {
-    float: 1;
+    float: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,9 +26,19 @@
 .loginDesc {
     font-size: 24px;
 }
+.loginimg {
+    margin-top: 12rem;
+    margin-left: -8rem;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 45%;
+}
 .loginBox {
-    height: 380px;
+    height: 40%;
     padding: 20px;
+    width: 230%;
+    margin-left: -6rem;
     background-color: #fff;
     border-radius: 10px;
     display: flex;

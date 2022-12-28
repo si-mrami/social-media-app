@@ -4,7 +4,7 @@
   background-color: #7f8c9e;
   display: flex;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
 }
@@ -38,6 +38,9 @@
   font-size: 20px !important;
   margin-left: 10px;
 }
+.searchIcon1 {
+  visibility: hidden;
+}
 
 .searchInput {
   border: none;
@@ -60,10 +63,15 @@
   margin-right: 10px;
   font-size: 14px;
   cursor: pointer;
+  color: #fff;
 }
 
 .topbarIcons {
   display: flex;
+  color: #fff;
+}
+.iconbar {
+  color: #fff;
 }
 
 .topbarIconItem {
@@ -93,4 +101,21 @@
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
+}
+
+/* media query */
+
+@media screen and (max-width: 480px) {
+  .searchbar {
+   display: none;
+ }
+
+ .searchIcon1 {
+  font-size: 30px !important;
+  margin-left: 15px;
+  margin-top: 0.9rem;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+ }
 }

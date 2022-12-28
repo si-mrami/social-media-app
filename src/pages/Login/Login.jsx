@@ -1,5 +1,6 @@
 import React from 'react';
 import './Login.css';
+import  loginimg  from "../../images/media.png";
 
 const Login = () => {
     return (
@@ -8,6 +9,7 @@ const Login = () => {
                <div className="loginLeft">
                 <h3 className="loginLogo">Mrami</h3>
                 <span className="loginDesc">Connect whit friends and the World With Mrami.{" "}</span>
+                <img src={loginimg} alt="" className="loginimg" />
                 </div> 
                <div className="loginRight">
                 <div className="loginBox">

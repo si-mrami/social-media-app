@@ -1,0 +1,96 @@
+.videos {
+    display: flex;
+    margin-top: 2rem;
+}
+.video-container {
+    flex: 12;
+    /* background: #b6b0b6; */
+}
+h2 {
+    text-align: center;
+    padding: 2rem;
+    color: #808080;
+}
+
+.video-list {
+    width: 100%;
+    border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(87, 84, 84, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(72, 70, 70, 0.68);
+    margin-top: 30px 0;
+}
+
+.videoTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.videoTopleft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.videoUsername {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.videoDate {
+    font-size: 10px;
+}
+.videoTopRight {
+    cursor: pointer;
+}
+
+.videoCenter {
+    margin: 20px 0;
+}
+
+.video {
+    width: 95%;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0.3rem;
+}
+
+.videobottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.videobottomleft{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;  
+}
+
+.imgicon{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.videoCounter {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.CommentText {
+    cursor: pointer;
+    border-bottom: 1px dashed gray;
+    font-size: 15px;
+    margin-right: 2rem;
+}

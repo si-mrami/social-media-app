@@ -2,13 +2,15 @@ import React from "react";
 import "./Profile.css";
 import Topbar from "../../components/topbar/Topbar";
 import Sidebar from "../../components/sidebar/Sidebar";
-import Feed from "../../components/feed/Feed";
+// import Feed from "../../components/feed/Feed";
 import Rightbar from "../../components/rightbar/Rightbar";
+import { Posts } from "../../dummyData";
+import Post from "../../components/post/Post";
 
 const Profile = () => {
   return (
     <>
-      <Topbar />
+    <Topbar/>
       <div className="profile">
         <Sidebar />
         <div className="profileRight">
@@ -31,9 +33,15 @@ const Profile = () => {
             </div>
           </div>
           <div className="profileRightBottom">
-            <Feed />
+            {/* <Feed /> */}
             <Rightbar profile/>
           </div>
+          <button className="rightbarButton">Show more Friends</button>
+          <div className="posts">
+          {Posts.map(p => (
+             <Post key={p.id} post={p}/>
+        ))}
+        </div>
         </div>
       </div>
     </>

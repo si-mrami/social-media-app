@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./Post.css";
-import { MoreVert, PostAddRounded } from "@material-ui/icons";
+import { MoreVert } from "@material-ui/icons";
 import { Users } from "../../dummyData";
 
 const Post = ({ post }) => {

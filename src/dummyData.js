@@ -26,7 +26,7 @@ export const Users = [
   },
   {
     id:6,
-    profilePicture: "assets/post/2.jpeg",
+    profilePicture: "assets/person/0.jpeg",
     username: "Shirley Beauchamp",
   },
   {
@@ -54,7 +54,7 @@ export const Users = [
 export const Posts = [
   {
     id: 1,
-    desc: "Nice Day.",
+    desc: "My Best Anime.",
     photo: "assets/post/1.jpeg",
     date: "5 mins ago",
     userId: 1,
@@ -63,6 +63,7 @@ export const Posts = [
   },
   {
     id: 2,
+    desc: "My Best Food.",
     photo: "assets/post/2.jpeg",
     date: "15 mins ago",
     userId: 2,
@@ -130,10 +131,30 @@ export const Posts = [
   },
   {
     id: 10,
+    desc: "My Love :)",
     photo: "assets/post/10.jpeg",
     date: "1 week ago",
     userId: 10,
-    like: 104,
+    like: 1204,
     comment: 12,
+  },
+  // {
+  //   id: 11,
+  //   photo: "assets/post/10.jpeg",
+  //   date: "1 week ago",
+  //   userId: 11,
+  //   like: 14,
+  //   comment: 12,
+  // },
+];
+
+export const Videos = [
+  {
+    id: 1,
+    video: "assets/post/10.jpeg",
+    date: "1 week ago",
+    userId: 1,
+    like: 2104,
+    comment: 1112,
   },
 ];

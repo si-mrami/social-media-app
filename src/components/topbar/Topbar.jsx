@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./topbar.css";
 import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 
@@ -5,7 +6,9 @@ export default function Topbar() {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="logo">Mrami</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">Mrami</span>
+        </Link>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
@@ -14,28 +17,43 @@ export default function Topbar() {
             placeholder="Search for friend, post or video"
             className="searchInput"
           />
+          <Search className="searchIcon1" />
         </div>
       </div>
       <div className="topbarRight">
         <div className="topbarLinks">
-          <span className="topbarLink">Home</span>
-          <span className="topbarLink">Online</span>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <span className="topbarLink">Home</span>
+          </Link>
+          <Link to="/onlinefriend" style={{ textDecoration: "none" }}>
+            <span className="topbarLink">Online</span>
+          </Link>
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
-            <Person />
-            <span className="topbarIconBadge">1</span>
+            <Link to="/friend-request" style={{ textDecoration: "none" }}>
+              <Person className="iconbar" />
+              <span className="topbarIconBadge">1</span>
+            </Link>
           </div>
+
           <div className="topbarIconItem">
-            <Chat />
-            <span className="topbarIconBadge">2</span>
+            <Link to="/chats" style={{ textDecoration: "none" }}>
+              <Chat className="iconbar" />
+              <span className="topbarIconBadge">2</span>
+            </Link>
           </div>
+
           <div className="topbarIconItem">
-            <Notifications />
-            <span className="topbarIconBadge">1</span>
+          <Link to="/notification" style={{ textDecoration: "none" }}>
+            <Notifications className="iconbar" />
+            <span className="topbarIconBadge">9+</span>
+            </Link>
           </div>
         </div>
-        <img src="/assets/person/person1.png" alt="" className="topbarImg"/>
+        <Link to="/profile" style={{ textDecoration: "none" }}>
+          <img src="/assets/person/person1.png" alt="" className="topbarImg" />
+        </Link>
       </div>
     </div>
   );
