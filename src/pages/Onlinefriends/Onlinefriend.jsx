@@ -13,6 +13,7 @@ export default function Onlinefriend () {
     <div className="Online">
         <Sidebar/>
         <div className="Online-container">
+        
             <h1>Your Online Friends</h1>
             <div className="Online-list">
                 <ul className='onlinefriends'>

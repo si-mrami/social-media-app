@@ -3,7 +3,7 @@
     margin-top: 2rem;
 }
 .Online-container {
-    flex: 12;
+    flex: 15;
 }
 
 h1 {
@@ -24,3 +24,5 @@ h1 {
 .onlinefriends {
     padding: 1rem;
 }
+
+/* media query */

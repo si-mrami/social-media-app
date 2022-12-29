@@ -1,7 +1,7 @@
 .sidebar {
   flex: 3;
   height: calc(100vh - 50px);
-  overflow-y: scroll;
+  overflow-x: scroll;
   position: sticky;
   top: 50px;
 }
@@ -56,3 +56,38 @@
   margin: 20px 0;
 }
 
+@media  screen and (min-width: 280px) and (max-width:480px) {
+
+  .sidebar {
+    display: block;
+  }
+  .sidebarWrapper{
+    display: block;
+    margin-left: -1.7rem;
+    font-size: 10px;
+  }
+  .sidebarListItem {
+    display: block;
+  }
+  .sidebarIcon {
+    font-size: 18px !important;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .sidebarListItemText {
+    font-size: 7px;
+    padding: 0.2rem;
+  }
+  .sidebarButton {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 8px;
+  }
+  .sidebarFriend {
+    display: block;
+    padding: 1rem;
+  }
+  .sidebarFriendName {
+    font-size: 6px;
+  }
+}

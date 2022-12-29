@@ -1,84 +1,96 @@
 .login {
-    width: 100vw;
-    height: 100vh;
     background-color: #dfe0e4;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
 .loginWrapper {
-    width: 70%;
+    width: 100%;
     height: 70%;
     display: flex;
+    padding: 1rem;
 }
-.loginleft,.loginRight {
-    float: 2;
-    display: flex;
-    flex-direction: column;
+
+.loginLeft {
+    display: block;
+    padding: 1rem;
     justify-content: center;
+    width: 50%;
 }
 .loginLogo {
     font-size: 50px;
     font-weight: 800;
-    color: crimson;
+    color: #dc143c;
+    margin-left: -3rem;
     margin-bottom: 10px;
 }
 .loginDesc {
     font-size: 24px;
 }
-.loginimg {
-    margin-top: 12rem;
-    margin-left: -8rem;
+.logImg {
+    margin-top: 5rem;
     border-radius: 10px;
     width: 100%;
-    margin-bottom: 2rem;
-    height: 45%;
-}
-.loginBox {
     height: 40%;
-    padding: 20px;
-    width: 230%;
-    margin-left: -6rem;
-    background-color: #fff;
-    border-radius: 10px;
+}
+
+.loginRight {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    width: 50%;
+    margin-top: 18rem;
 }
+.loginBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
 .loginInput {
     height: 50px;
     border-radius: 10px;
-    border: 1px solid gray;
+    border: 1px solid #808080;
     font-size: 18px;
-    padding-left: 20px;
+    padding: 0.5rem;
+    margin-top: 1rem;
 }
+
 .loginInput:focus {
     outline: none;
 }
+
 .loginButton {
     height: 50px;
     border-radius: 10px;
     border: none;
-    background-color: #0000ff;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-}
-.loginForgot {
-    text-align: center;
-    color: #0000ff;
-    cursor: pointer;
-}
-.loginRegesterButton {
-    width: 70%;
-    align-self: center;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
+    margin-top: 1rem;
     background-color: #42b72a;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
+    cursor: pointer;
+}
+.forget-pass {
+    text-align: center;
+    margin-top: 1rem;
+    color: #0000ff;
+    cursor: pointer;
+}
+
+.singButton {
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 1rem;
+    background-color: #0000ff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 3rem;
     cursor: pointer;
 }
