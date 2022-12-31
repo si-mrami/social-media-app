@@ -9,6 +9,7 @@
 }
 
 .postWrapper {
+    width: 100%;
     margin-top: 0.5rem;
     border-radius: 10px;
 }
@@ -118,7 +119,37 @@
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     background-color: #b2adadd3;
   }
-  
-  /* .scrollbar-primary {
-    scrollbar-color: #4285F4 #F5F5F5;
-  } */
+
+/* media query */
+
+@media screen and (min-width:280px) and (max-width:480px) {
+    .post {
+        width: 93%;
+        margin-left: 0.3rem;
+    }
+    .postWrapper {
+        font-size: 12px;
+    }
+    .postUsername {
+        font-size: 9px;
+        margin-left: -0.1rem;
+    }
+    .postDate {
+        font-size: 6px;
+    }
+    .postText {
+        font-size: 10px;
+    }
+    .likeIcon {
+        width: 12px;
+        height: 12px;
+    }
+    .postLikeCounter {
+        font-size: 9px;
+        margin-bottom: 0.5rem;
+    }
+    .postCommentText {
+        font-size: 9px;
+        margin-bottom: 0.5rem;
+    }
+}

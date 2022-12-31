@@ -1,3 +1,11 @@
 #root {
     overflow: hidden;
 }
+.app {
+    display: flex;
+}
+.app-container {
+    /* background-color: #0ff; */
+    /* display: flex; */
+    flex: 15;
+}

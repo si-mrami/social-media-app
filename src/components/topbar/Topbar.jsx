@@ -22,9 +22,9 @@ export default function Topbar() {
       </div>
       <div className="topbarRight">
         <div className="topbarLinks">
-          <Link to="/" style={{ textDecoration: "none" }}>
+          {/* <Link to="/" style={{ textDecoration: "none" }}>
             <span className="topbarLink">Home</span>
-          </Link>
+          </Link> */}
           <Link to="/onlinefriend" style={{ textDecoration: "none" }}>
             <span className="topbarLink">Online</span>
           </Link>

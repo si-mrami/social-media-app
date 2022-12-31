@@ -11,7 +11,7 @@ import { useState } from "react";
 
 export default function Videos({vide}) {
 
-  const [liked, setLiked] = useState("");
+  const [liked, setLiked] = useState(12);
   const [isLiked, setisLiked] = useState(false);
 
   const hendellikeClick = () =>{

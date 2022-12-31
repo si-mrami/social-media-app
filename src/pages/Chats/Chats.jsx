@@ -25,9 +25,12 @@ export default function Chats() {
               <img src={pe1} alt="" className="profileimg" />
               <span className="iconOnline"></span>
               <span className="username">Mohamed Deyane</span>
-              {/* <img src={pe1} alt="" className="profileimg" />
+              <img src={pe1} alt="" className="profileimg" />
               <span className="iconOnline"></span>
-              <span className="username">Ayoub Rami</span> */}
+              <span className="username">Ayoub Rami</span>
+              <img src={pe1} alt="" className="profileimg" />
+              <span className="iconOnline"></span>
+              <span className="username">Idriss Laframe</span>
               {/* <img src={pe1} alt="" className="profileimg" />
               <span className="iconOnline"></span>
               <span className="username">Idriss Laframe</span> */}

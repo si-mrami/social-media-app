@@ -37,6 +37,7 @@ const Post = ({ post }) => {
           <span className="postText">{post?.desc}</span>
           <img src={post.photo} alt="" className="postImg" />
         </div>
+        <hr className="shareHr" />
         <div className="postButtom">
           <div className="postButtomLeft">
             <img src="assets/like.png" onClick={handelLike} alt="" className="likeIcon" />
@@ -47,6 +48,7 @@ const Post = ({ post }) => {
             <span className="postCommentText">{post.comment} comments</span>
           </div>
         </div>
+        <hr className="shareHr" />
       </div>
      </div>
      </div>

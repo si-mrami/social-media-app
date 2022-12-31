@@ -9,11 +9,16 @@ import Onlinefriend from "./pages/Onlinefriends/Onlinefriend";
 import Chats from "./pages/Chats/Chats";
 import Addfriends from "./pages/Addfriends/Addfriends";
 import Notification from "./pages/Notification/Notification";
+import Topbar from "./components/topbar/Topbar";
+import Sidebar from "./components/sidebar/Sidebar";
 
 
 function App() {
   return (
     <>
+    {/* <Topbar/>
+    <div className="app-container">
+    // <Sidebar/> */}
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/profile" element={<Profile/>}/>
@@ -25,6 +30,7 @@ function App() {
       <Route path="/friend-request" element={<Addfriends/>}/>
       <Route path="/notification" element={<Notification/>}/>
     </Routes>
+    {/* </div> */}
     </>
   );
 }
