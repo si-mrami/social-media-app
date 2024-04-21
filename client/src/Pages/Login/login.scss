@@ -39,6 +39,12 @@
 				gap: 10px;
 				width: 100%;
 
+				span {
+					font-size: 12px;
+					color: red;
+					text-align: center;
+				}
+
 				.formGroup {
 					display: flex;
 					flex-direction: column;
