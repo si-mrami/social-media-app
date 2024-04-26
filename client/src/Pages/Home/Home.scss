@@ -1,0 +1,11 @@
+.home {
+
+	.homeContainer {
+		display: flex;
+
+		.homeFeed {
+			flex: 80%;
+			background-color: #0ff;
+		}
+	}
+}

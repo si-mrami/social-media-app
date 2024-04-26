@@ -14,6 +14,10 @@ const Register = () => {
 	const handleRegister = async (e) => {
 		e.preventDefault();
 		setErr('');
+		if (!username || !email || !password || !confirmPassword) {
+			setErr('All fields are required!');
+			return;
+		}
 		if (password !== confirmPassword) {
 			setErr('Passwords do not matsh')
 		}

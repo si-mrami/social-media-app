@@ -1,0 +1,117 @@
+.navbar {
+	display: flex;
+	padding: 1rem;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 2px solid lightgray;
+
+	.left {
+		display: flex;
+		align-items: center;
+		width: 30%;
+		justify-content: space-between;
+
+		.searchInput {
+			padding: 0.5rem;
+			border: none;
+			border-radius: 0.5rem;
+
+			input {
+				padding: 10px;
+				border: 1px solid lightgray;
+				border-radius: 5px;
+				outline: none;
+			}
+		}
+
+		.logo {
+
+			img {
+				width: 3rem;
+				height: 3rem;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.right {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 20%;
+
+		.btnCreate {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			button {
+				color: #fff;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: all 0.3s;
+				background-color: #f1356d;
+				// padding: 0.4rem;
+				font-size: 18px;
+
+				&:hover {
+					background-color: #123e74;
+					transform: scale(1.05);
+				}
+			}
+		}
+
+		.profile {
+			display: flex;
+			align-items: center;
+
+			img {
+				width: 2.5rem;
+				height: 2.5rem;
+				border-radius: 50%;
+				cursor: pointer;
+
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+
+
+		}
+
+		.userProfileList {
+			position: absolute;
+			top: 4rem;
+			right: 1rem;
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			padding: 0.5rem;
+			display: none;
+			z-index: 1;
+
+			&.active {
+				display: block;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+
+				li {
+					padding: 0.5rem;
+					cursor: pointer;
+					transition: all 0.3s;
+
+					&:hover {
+						background-color: #f9f9f9;
+					}
+				}
+			}
+		}
+	}
+}

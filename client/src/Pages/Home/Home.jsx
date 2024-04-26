@@ -1,10 +1,18 @@
-import React from 'react'
+import Feed from '../../components/Feed/Feed'
 import Navbar from '../../components/Navbar/Navbar'
+import Sedbar from '../../components/Sidebar/Sidebar'
+import './Home.scss'
 
-const Home = ({}) => {
+const Home = () => {
 	return (
-		<div>
+		<div className='home'>
 			<Navbar />
+			<div className="homeContainer">
+				<Sedbar />
+				<div className="homeFeed">
+					<Feed />
+				</div>
+			</div>
 		</div>
 	)
 }
